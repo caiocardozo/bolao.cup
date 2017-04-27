@@ -44,12 +44,25 @@
   <ItemGroup>
     <Compile Include="Context\Context.cs" />
     <Compile Include="Context\IContext.cs" />
+    <Compile Include="Mappings\ApostaConfiguration.cs" />
+    <Compile Include="Mappings\CampeonatoConfiguration.cs" />
+    <Compile Include="Mappings\ClubeConfiguration.cs" />
+    <Compile Include="Mappings\JogoConfiguration.cs" />
+    <Compile Include="Mappings\PontuacaoConfiguration.cs" />
+    <Compile Include="Mappings\PontuacaoRodadaConfiguration.cs" />
+    <Compile Include="Mappings\RodadaConfiguration.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ApostaRepository.cs" />
+    <Compile Include="Repositories\CampeonatoRepository.cs" />
+    <Compile Include="Repositories\ClubeRepository.cs" />
+    <Compile Include="Repositories\JogoRepository.cs" />
+    <Compile Include="Repositories\PontuacaoRepository.cs" />
+    <Compile Include="Repositories\PontuacaoRodadaRepository.cs" />
     <Compile Include="Repositories\RepositoryBase.cs" />
+    <Compile Include="Repositories\RodadaRepository.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Mappings\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
