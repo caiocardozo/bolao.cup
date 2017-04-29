@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Bolao.Cup.Application.Interfaces;
+using Bolao.Cup.Domain.Entities;
+using Bolao.Cup.Domain.Interfaces.Services;
 
 namespace Bolao.Cup.Application.Services
 {
-    class ClubeAppService
+    public class ClubeAppService : AppServiceBase<Clube>, IClubeAppService
     {
+        private readonly IClubeService _clubeService;
+
+        public ClubeAppService(IClubeService clubeService)
+            : base(clubeService)
+        {
+            _clubeService = clubeService;
+        }
     }
-}
+    }

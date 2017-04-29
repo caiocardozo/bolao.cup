@@ -45,7 +45,7 @@
     <Compile Include="Interfaces\IAppServiceBase.cs" />
     <Compile Include="Interfaces\ICampeonatoAppService.cs" />
     <Compile Include="Interfaces\IClubeAppService.cs" />
-    <Compile Include="Interfaces\IJogosAppService.cs" />
+    <Compile Include="Interfaces\IJogoAppService.cs" />
     <Compile Include="Interfaces\IPontuacaoAppService.cs" />
     <Compile Include="Interfaces\IPontuacaoRodadaAppService.cs" />
     <Compile Include="Interfaces\IRodadaAppService.cs" />

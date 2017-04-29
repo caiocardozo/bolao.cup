@@ -2,7 +2,7 @@
 
 namespace Bolao.Cup.Application.Interfaces
 {
-    public interface IApostaAppService : IAppServiceBase<Aposta>
+    public interface IJogoAppService : IAppServiceBase<Jogo>
     {
     }
 }

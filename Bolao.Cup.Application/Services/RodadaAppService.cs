@@ -1,12 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Bolao.Cup.Application.Interfaces;
+using Bolao.Cup.Domain.Entities;
+using Bolao.Cup.Domain.Interfaces.Services;
 
 namespace Bolao.Cup.Application.Services
 {
-    class RodadaAppService
+    public class RodadaAppService : AppServiceBase<Rodada>, IRodadaAppService
     {
+        private readonly IRodadaService _rodadaService;
+
+        public RodadaAppService(IRodadaService rodadaService)
+            : base(rodadaService)
+        {
+            _rodadaService = rodadaService;
+        }
+
     }
 }

@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Bolao.Cup.Domain.Entities;
 
 namespace Bolao.Cup.Application.Interfaces
 {
-    interface IClubeAppService
+    public interface IClubeAppService : IAppServiceBase<Clube>
     {
     }
 }

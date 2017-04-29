@@ -1,12 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Bolao.Cup.Application.Interfaces;
+using Bolao.Cup.Domain.Entities;
+using Bolao.Cup.Domain.Interfaces.Services;
 
 namespace Bolao.Cup.Application.Services
 {
-    class JogoAppService
+    public class JogoAppService : AppServiceBase<Jogo>, IJogoAppService
     {
+        private readonly IJogoService _jogoService;
+
+        public JogoAppService(IJogoService jogoService)
+            : base(jogoService)
+        {
+            _jogoService = jogoService;
+        }
+
     }
 }
