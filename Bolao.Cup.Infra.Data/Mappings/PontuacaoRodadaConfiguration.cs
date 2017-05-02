@@ -18,13 +18,13 @@ namespace Bolao.Cup.Infra.Data.Mappings
             Property(p => p.pontuacao)
                 .IsRequired();
 
-            // MAPEAMENTO DE UM PARA UM
-            HasRequired(p => p.Rodada)
-                .WithRequiredPrincipal(p => p.PontuacaoRodada);
+            HasRequired(t => t.Rodada)
+             .WithMany(t => t.PontuacaoRodada)
+             .HasForeignKey(t => t.cod_rodada);
 
-            // MAPEAMENTO DE UM PARA UM
-            HasRequired(p => p.User)
-                .WithRequiredPrincipal(p => p.PontuacaoRodada);
+            HasRequired(t => t.Usuario)
+            .WithMany(t => t.PontuacaoRodada)
+            .HasForeignKey(t => t.cod_user);
         }
     }
 }

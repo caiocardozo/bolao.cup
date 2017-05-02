@@ -49,10 +49,12 @@
     <Compile Include="Interfaces\IPontuacaoAppService.cs" />
     <Compile Include="Interfaces\IPontuacaoRodadaAppService.cs" />
     <Compile Include="Interfaces\IRodadaAppService.cs" />
+    <Compile Include="Interfaces\IUsuarioAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AppServiceBase.cs" />
     <Compile Include="Services\CampeonatoAppService.cs" />
     <Compile Include="Services\ClubeAppService.cs" />
+    <Compile Include="Services\UsuarioAppService.cs" />
     <Compile Include="Services\RodadaAppService.cs" />
     <Compile Include="Services\JogoAppService.cs" />
     <Compile Include="Services\PontuacaoAppService.cs" />

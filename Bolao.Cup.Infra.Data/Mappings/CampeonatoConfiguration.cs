@@ -11,7 +11,7 @@ namespace Bolao.Cup.Infra.Data.Mappings
             HasKey(c => c.cod_campeonato);
 
             Property(c => c.cod_campeonato)
-               .HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
+              .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
 
             Property(c => c.nom_campeonato)
                 .HasMaxLength(100)
@@ -25,8 +25,10 @@ namespace Bolao.Cup.Infra.Data.Mappings
                 .IsRequired();
 
             Property(c => c.sit_campeonato)
-                .IsRequired();
+                .IsRequired()
+                .HasMaxLength(7);
 
+            
         }
     }
 }

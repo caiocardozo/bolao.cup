@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.3
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Apresentation", "0 - Apresentation", "{A94D4F9B-D8E3-4CB5-8080-14118F9788C9}"
 EndProject
@@ -17,7 +17,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bolao.Cup.Domain", "Bolao.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bolao.Cup.Application", "Bolao.Cup.Application\Bolao.Cup.Application.csproj", "{39B48109-281A-440E-81AE-1E660A8ACD29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bolao.Cup.Web", "Bolao.Cup.Web\Bolao.Cup.Web.csproj", "{CB4CF36F-3848-44E6-AFFA-2C7DE3A56E57}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bolao.Store.WEBMVC", "Bolao.Store.WEBMVC\Bolao.Store.WEBMVC.csproj", "{E527E29D-8B30-4A82-93D4-D656A1A992AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bolao.Cup.Infra.CrossCutting.IoC", "Bolao.Cup.Infra.CrossCutting.IoC\Bolao.Cup.Infra.CrossCutting.IoC.csproj", "{32372406-1072-4CDA-969F-E88A95CF753A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +39,14 @@ Global
 		{39B48109-281A-440E-81AE-1E660A8ACD29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39B48109-281A-440E-81AE-1E660A8ACD29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39B48109-281A-440E-81AE-1E660A8ACD29}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CB4CF36F-3848-44E6-AFFA-2C7DE3A56E57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CB4CF36F-3848-44E6-AFFA-2C7DE3A56E57}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CB4CF36F-3848-44E6-AFFA-2C7DE3A56E57}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CB4CF36F-3848-44E6-AFFA-2C7DE3A56E57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E527E29D-8B30-4A82-93D4-D656A1A992AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E527E29D-8B30-4A82-93D4-D656A1A992AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E527E29D-8B30-4A82-93D4-D656A1A992AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E527E29D-8B30-4A82-93D4-D656A1A992AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32372406-1072-4CDA-969F-E88A95CF753A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32372406-1072-4CDA-969F-E88A95CF753A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32372406-1072-4CDA-969F-E88A95CF753A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32372406-1072-4CDA-969F-E88A95CF753A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +55,7 @@ Global
 		{63858E23-41E7-4EBD-A4B8-F5B54B00F5F6} = {88444E4A-647B-4DE7-B9AE-4CEF7621E590}
 		{EBCE9B0D-0A4F-4768-B99F-1D119309F536} = {FE6ADEF2-DC53-486F-B8FF-B20FAFF265AA}
 		{39B48109-281A-440E-81AE-1E660A8ACD29} = {10FC60E9-36D6-4F63-A43A-A43BCFDA5CA2}
-		{CB4CF36F-3848-44E6-AFFA-2C7DE3A56E57} = {A94D4F9B-D8E3-4CB5-8080-14118F9788C9}
+		{E527E29D-8B30-4A82-93D4-D656A1A992AD} = {A94D4F9B-D8E3-4CB5-8080-14118F9788C9}
+		{32372406-1072-4CDA-969F-E88A95CF753A} = {88444E4A-647B-4DE7-B9AE-4CEF7621E590}
 	EndGlobalSection
 EndGlobal

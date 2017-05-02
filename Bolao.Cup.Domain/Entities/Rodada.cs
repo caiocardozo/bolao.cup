@@ -11,11 +11,12 @@ namespace Bolao.Cup.Domain.Entities
         public int peso_rodada { get; set; }
 
         public int cod_campeonato { get; set; }
-        public Campeonato Campeonato { get; set; }
 
-        public ICollection<Jogo> Jogos { get; set; }
+        public virtual Campeonato Campeonato { get; set; }
 
-        public Pontuacao_Rodada PontuacaoRodada { get; set; }
+        public virtual ICollection<Jogo> Jogos { get; set; }
+
+        public virtual ICollection<Pontuacao_Rodada> PontuacaoRodada { get; set; }
 
     }
 }

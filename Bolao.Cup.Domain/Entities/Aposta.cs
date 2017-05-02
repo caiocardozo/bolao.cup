@@ -1,4 +1,6 @@
-﻿namespace Bolao.Cup.Domain.Entities
+﻿using System;
+
+namespace Bolao.Cup.Domain.Entities
 {
     public class Aposta
     {
@@ -13,5 +15,7 @@
         public int vis_aposta { get; set; }
 
         public virtual Jogo Jogo { get; set; }
+
+        public virtual Usuario Usuario { get; set; }
     }
 }

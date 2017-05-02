@@ -1,4 +1,5 @@
 ﻿using Bolao.Cup.Domain.Entities;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
 
 namespace Bolao.Cup.Infra.Data.Mappings
@@ -8,6 +9,9 @@ namespace Bolao.Cup.Infra.Data.Mappings
         public RodadaConfiguration()
         {
             HasKey(r => r.cod_rodada);
+
+            Property(r => r.cod_rodada)
+                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
 
             Property(r => r.des_rodada)
                 .HasMaxLength(100)

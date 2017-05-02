@@ -26,6 +26,6 @@ namespace Bolao.Cup.Domain.Entities
 
         public virtual Aposta Aposta { get; set; }
 
-        public Rodada Rodada { get; set; }
+        public virtual Rodada Rodada { get; set; }
     }
 }

@@ -17,5 +17,6 @@ namespace Bolao.Cup.Infra.Data.Context
         DbSet<Pontuacao_Rodada> PontuacaoRodada { get; set; }
         DbSet<Rodada> Rodada { get; set; }
         DbSet<Aposta> Aposta { get; set; }
+        DbSet<Usuario> Usuario { get; set; }
     }
 }

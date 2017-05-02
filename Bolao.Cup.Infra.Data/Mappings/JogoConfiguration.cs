@@ -11,7 +11,7 @@ namespace Bolao.Cup.Infra.Data.Mappings
             HasKey(j => j.cod_jogo);
 
             Property(c => c.cod_jogo)
-               .HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
+               .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
 
             Property(j => j.cod_rodada)
                 .IsRequired();
@@ -24,7 +24,7 @@ namespace Bolao.Cup.Infra.Data.Mappings
 
             //mapeia o relacionamento 1 to N com Clube
             HasRequired(t => t.ClubeCas)
-           .WithMany(t => t.Jogo)
+           .WithMany(t => t.JogoCasa)
            .HasForeignKey(t => t.cas_clube);
 
             HasRequired(t => t.ClubeVis)

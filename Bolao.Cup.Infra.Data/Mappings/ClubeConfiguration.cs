@@ -11,7 +11,7 @@ namespace Bolao.Cup.Infra.Data.Mappings
             HasKey(c => c.cod_clube);
 
             Property(c => c.cod_clube)
-                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
+                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
 
             Property(c => c.des_clube)
                 .IsRequired()

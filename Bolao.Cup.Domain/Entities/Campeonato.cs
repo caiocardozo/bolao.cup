@@ -15,8 +15,8 @@ namespace Bolao.Cup.Domain.Entities
 
         public string sit_campeonato { get; set; }
 
-        public ICollection<Rodada> Rodada { get; set; }
+        public virtual ICollection<Rodada> Rodada { get; set; }
 
-        public Pontuacao Pontuacao { get; set; }
+        public virtual ICollection<Pontuacao> Pontuacao { get; set; }
     }
 }

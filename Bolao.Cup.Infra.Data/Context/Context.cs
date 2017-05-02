@@ -7,10 +7,7 @@ namespace Bolao.Cup.Infra.Data.Context
 {
     public class Context : DbContext, IContext
     {
-        public Context()
-            : base() //nome da string de conexao
-        //: base("name=OracleDbContextSapiens") //nome da string de conexao
-        //: base(new OracleConnection(ConfigurationManager.ConnectionStrings["OracleDbContext"].ConnectionString), true)
+        public Context() : base("StoreConnectionString")//nome da string de conexao
         {
         }
 
@@ -21,22 +18,15 @@ namespace Bolao.Cup.Infra.Data.Context
         public DbSet<Pontuacao_Rodada> PontuacaoRodada { get; set; }
         public DbSet<Rodada> Rodada { get; set; }
         public DbSet<Aposta> Aposta { get; set; }
+        public DbSet<Usuario> Usuario { get; set; }
 
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            // modelBuilder.HasDefaultSchema("SITEPRODUCAO");
-            // modelBuilder.HasDefaultSchema("SITETESTE");
-            // modelBuilder.HasDefaultSchema("SAPIENSPRODUCAO");
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();//impede que crie o nome das tabelas no plural
-            //modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();//impede que os registros sejam deletados em cascata
-            //modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();//impede que os registros sejam deletados em cascata
-
-            //seta como padrão as propriedades com id para primari key
-            //modelBuilder.Properties()
-            //    .Where(p => p.Name == p.ReflectedType.Name + "id")
-            //    .Configure(p => p.IsKey());
+            modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();//impede que os registros sejam deletados em cascata
+            modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();//impede que os registros sejam deletados em cascata
 
             //seta todos atributos que forem string para varchar ao inves de criar com o padrão nvarchar
             modelBuilder.Properties<string>()
@@ -53,6 +43,7 @@ namespace Bolao.Cup.Infra.Data.Context
             modelBuilder.Configurations.Add(new RodadaConfiguration());
             modelBuilder.Configurations.Add(new PontuacaoRodadaConfiguration());
             modelBuilder.Configurations.Add(new CampeonatoConfiguration());
+            modelBuilder.Configurations.Add(new UsuarioConfiguration());
 
         }
     }

@@ -9,5 +9,9 @@ namespace Bolao.Cup.Domain.Entities
         public string des_clube { get; set; }
 
         public virtual ICollection<Jogo> Jogo { get; set; }
+
+        public virtual ICollection<Jogo> JogoCasa { get; set; }
+
+        public virtual ICollection<Usuario> Usuario { get; set; }
     }
 }
