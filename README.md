@@ -3,10 +3,9 @@ O que é o Bolao.Cup?
 
 O projeto Bolao.Cup é um site de palpites de jogos para o campeonato brasileiro. Um bolão com pontuacao por acerto e aproximação do placar dos jogos do campeonato brasileiro.
 
-O projeto foi pausado temporariamente por motivos particulares, agora estou me qualificando para desenvolver aplicativos.
+O projeto foi pausado temporariamente por motivos particulares, agora estou me qualificando e dedicando a desenvolver aplicativos mobile.
 
 ## Tecnolgias implementadas:
-
 
 - ASP.NET MVC 
 - Entity Framework
